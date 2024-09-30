@@ -3,6 +3,8 @@
  */
 
 module.exports = {
+  output:"standalone",
+  staticPageGenerationTimeout: 60,
   images: {
     domains: [
       'res.cloudinary.com',

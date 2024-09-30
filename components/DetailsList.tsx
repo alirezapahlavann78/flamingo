@@ -19,7 +19,7 @@ interface Props {
     | {
         title?: FieldError | undefined
       }[]
-    | undefined
+    | any
 }
 
 const DetailsList: React.FC<Props> = (props) => {

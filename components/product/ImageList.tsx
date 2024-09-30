@@ -9,7 +9,7 @@ import type { IProductForm } from 'types'
 
 interface Props {
   control: Control<IProductForm>
-  errors?: { url?: FieldError | undefined }[] | undefined
+  errors?: { url?: FieldError | undefined }[] | any
 }
 
 const ImageList: React.FC<Props> = (props) => {
