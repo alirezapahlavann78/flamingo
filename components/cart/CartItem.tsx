@@ -61,10 +61,10 @@ const CartItem: React.FC<Props> = (props) => {
               <span className='farsi-digits'>{item.size.size}</span>
             </div>
           )}
-          <div className='flex items-center gap-x-2'>
+          {/* <div className='flex items-center gap-x-2'>
             <ShieldCheck className='icon' />
             <span className='font-light'>گارانتی اصالت و ضمانت تحویل</span>
-          </div>
+          </div> */}
           <div className='flex items-center gap-x-2'>
             <Save className='icon text-sky-400' />
             <span className='font-light'>موجود در انبار  </span>

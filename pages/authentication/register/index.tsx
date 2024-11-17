@@ -3,6 +3,7 @@ import Head from 'next/head'
 import { useEffect } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import Image from 'next/image'
 
 import { SubmitHandler, useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
@@ -77,8 +78,13 @@ const RegisterPage: NextPage = () => {
           <title>فلامینگو گالری | ثبت‌نام</title>
         </Head>
         <section className='container max-w-xl px-12 py-6 space-y-6 lg:border lg:border-gray-100 lg:rounded-lg lg:shadow'>
-          <Link passHref href='/'>
-            <Logo className='h-24 mx-auto w-44' />
+        <Link passHref href='/' className='w-full  justify-center flex'>
+          <Image
+              src='/imgs/logo-no-background.png'
+              width={224}
+              height={324}
+              alt='flamingo'
+            />
           </Link>
           <h2 className='text-gray-700'>ثبت‌نام</h2>
           <form

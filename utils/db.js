@@ -18,7 +18,7 @@ async function connect() {
       return
     }
 
-    await mongoose.disconnect()
+    // await mongoose.disconnect()
   }
 
   const db = await mongoose.connect(process.env.MONGODB_URL, {

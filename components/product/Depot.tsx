@@ -7,7 +7,7 @@ interface Props {
 
 const Depot: React.FC<Props> = ({ inStock }) => {
   //? Render(s)
-  if (inStock < 10 && inStock !== 0) {
+  if (inStock < 5 && inStock !== 0) {
     return (
       <span className='text-red-500 farsi-digits'>
         تنها {formatNumber(inStock)} عدد در انبار باقی مانده

@@ -244,7 +244,7 @@ const ShippingPage: NextPage = () => {
             <section className='lg:border lg:border-gray-200 lg:rounded-md lg:h-fit'>
               <CartInfo />
               <div className='px-3 py-2 space-y-3'>
-                <div className='flex items-center gap-x-2 '>
+                {/* <div className='flex items-center gap-x-2 '>
                   <input
                     type='radio'
                     name='cash'
@@ -254,23 +254,23 @@ const ShippingPage: NextPage = () => {
                     onChange={(e) => setPaymentMethod(e.target.value)}
                   />
                   <label className='text-sm' htmlFor='cash'>
-                    پرداخت در محل
+                     در محل
                   </label>
-                </div>
-                <div className='flex items-center gap-x-2 '>
+                </div> */}
+                {/* <div className='flex items-center gap-x-2 '>
                   <input
                     type='radio'
                     name='zarinPal'
                     id='zarinPal'
                     value='زرین پال'
-                    disabled={true}
+                    // disabled={true}
                     checked={paymentMethod === 'زرین پال'}
                     onChange={(e) => setPaymentMethod(e.target.value)}
                   />
                   <label className='text-sm' htmlFor='zarinPal'>
-                    زرین پال (بزودی)
+                    پرداخت با زرین پال
                   </label>
-                </div>
+                </div> */}
                 <Button
                   onClick={handleCreateOrder}
                   isLoading={isLoading}

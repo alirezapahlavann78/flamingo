@@ -18,31 +18,35 @@ const CartInfo: React.FC<Props> = (props) => {
   const { totalItems, totalPrice, totalDiscount } = useAppSelector(
     (state) => state.cart
   )
-
+  let totalPriceByDis = totalPrice - totalDiscount
   //? Render(s)
   return (
     <div className='px-4 py-2 mt-10 space-y-5 lg:mt-0 lg:h-fit lg:py-4'>
       {/* total cart price */}
-      <div className='pb-2 border-b border-gray-200 flex justify-between'>
+      <div className='pb-2  flex justify-between'>
         <span className='text-sm farsi-digits'>
           قیمت کالاها ({formatNumber(totalItems)})
         </span>
         <div className='flex-center'>
           <span className='farsi-digits'>{formatNumber(totalPrice)}</span>
           <span className='text-gray-700 mr-1'> تومان </span>
-
         </div>
       </div>
-
+      <div className='pb-2 border-b border-gray-200 flex justify-between'>
+        <span className='text-sm farsi-digits'>هزینه ارسال</span>
+        <div className='flex-center'>
+          <span className='farsi-digits'>{formatNumber(45000)}</span>
+          <span className='text-gray-700 mr-1'> تومان </span>
+        </div>
+      </div>
       {/* total cart items */}
       <div className='flex justify-between'>
         <span>جمع سبد خرید</span>
         <div className='flex-center'>
           <span className='text-sm farsi-digits'>
-            {formatNumber(totalPrice - totalDiscount)}
+            {formatNumber(totalPriceByDis + 45000)}
           </span>
           <span className='text-gray-700 mr-1'> تومان </span>
-
         </div>
       </div>
 

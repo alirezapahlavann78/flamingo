@@ -28,6 +28,8 @@ const createCategory = async (
   res: NextApiResponse
 ) => {
   try {
+    console.log('req.user.ro1111le', req)
+
     if (req.user.role !== roles.ROOT)
       return sendError(res, 403, 'شما اجازه انجام این عملیات را ندارید')
 

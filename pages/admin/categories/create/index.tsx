@@ -10,7 +10,6 @@ import {
 } from 'components'
 
 import { SubmitHandler } from 'react-hook-form'
-
 import { useCreateCategoryMutation } from 'services'
 
 import type { NextPage } from 'next'
@@ -20,8 +19,8 @@ const Create: NextPage = () => {
   //? Assets
   const { query, push } = useRouter()
   const parentId = query.parent_id as string
-  const parentLvl = query.parent_lvl ? +query.parent_lvl : 0
-
+  let numLvl =Number(query.parent_lvl)
+  const parentLvl = query.parent_lvl ?  ++numLvl : 0 
   //? Queries
   //*   Create Category
   const [createCtegory, { data, isSuccess, isLoading, error, isError }] =
@@ -68,7 +67,7 @@ const Create: NextPage = () => {
             <CategoryForm
               mode='create'
               isLoading={isLoading}
-              parentLvl={parentLvl}
+              parentLvl={Number(query.parent_lvl)}
               createHandler={createHandler}
             />
           </PageContainer>

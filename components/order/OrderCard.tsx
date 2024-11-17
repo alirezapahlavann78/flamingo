@@ -56,7 +56,7 @@ const OrderCard: React.FC<Props> = (props) => {
               <Clock2 className='p-0.5 w-6 h-6 bg-amber-500 text-white rounded-full' />
             )}
             <span className='text-sm text-black'>
-              {order.delivered ? 'تحویل شده' : 'در حال پردازش'}
+              {order.delivered ? 'ارسال شده' : 'در حال پردازش'}
             </span>
           </div>
           {order.delivered && (
@@ -76,7 +76,7 @@ const OrderCard: React.FC<Props> = (props) => {
                     disabled={order.delivered}
                   >
                     <Check className='text-white rounded-full p-0.5 icon bg-green-500 ' />
-                    <span className='block'>تغییر وضعیت به تحویل شده</span>
+                    <span className='block'>تغییر وضعیت به ارسال شده</span>
                   </button>
                   <button
                     type='button'

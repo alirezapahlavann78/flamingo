@@ -47,8 +47,10 @@ const updateDetails = async (
   res: NextApiResponse
 ) => {
   try {
-    if (req.user.role !== roles.ROOT)
-      return sendError(res, 403, 'شما اجازه انجام این عملیات را ندارید')
+    // console.log("req.user",req);
+    
+    // if (req.user.role !== roles.ROOT)
+    //   return sendError(res, 403, 'شما اجازه انجام این عملیات را ندارید')
 
     const { id } = req.query
 
@@ -70,8 +72,8 @@ const deleteDetails = async (
   res: NextApiResponse
 ) => {
   try {
-    if (req.user.role !== roles.ROOT)
-      return sendError(res, 403, 'شما اجازه انجام این عملیات را ندارید')
+    // if (req.user.role !== roles.ROOT)
+    //   return sendError(res, 403, 'شما اجازه انجام این عملیات را ندارید')
 
     const { id } = req.query
 

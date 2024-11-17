@@ -65,20 +65,20 @@ const AddToCart: React.FC<Props> = (props) => {
           </>
         )}
 
-        <div className='py-3 lg:items-center lg:gap-x-2 lg:flex'>
+        {/* <div className='py-3 lg:items-center lg:gap-x-2 lg:flex'>
           <ShieldCheck className='icon' />
           <span className='font-light'>گارانتی اصالت و ضمانت تحویل</span>
-        </div>
+        </div> */}
 
         <div className='lg:block lg:py-3 '>
           <Depot inStock={product.inStock} />
         </div>
 
-        <div className='lg:flex lg:items-center lg:gap-x-1 lg:py-3'>
+        {/* <div className='lg:flex lg:items-center lg:gap-x-1 lg:py-3'>
           <Check className='icon' />
           <span> فروش :</span>
           <span className='farsi-digits'>{formatNumber(product.sold)}</span>
-        </div>
+        </div> */}
 
         <AddToCartOperation product={product} />
       </div>

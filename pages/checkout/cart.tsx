@@ -142,7 +142,7 @@ const Cart: NextPage = () => {
           <div className='lg:border lg:border-gray-200 lg:rounded-md'>
             <CartInfo handleRoute={handleRoute} cart />
           </div>
-          <FreeShipping />
+          {/* <FreeShipping /> */}
         </section>
 
         {/* to Shipping */}

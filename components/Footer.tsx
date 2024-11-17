@@ -32,11 +32,11 @@ export default function Footer() {
               alt='flamingo'
             />
             {/* <LogoPersian className='w-32 h-10 mb-6' /> */}
-            <div className='flex flex-col gap-y-2 lg:flex-row pt-8 lg:gap-x-5'>
+            {/* <div className='flex flex-col gap-y-2 lg:flex-row pt-8 lg:gap-x-5'>
               <span>تلفن پشتیبانی ۶۱۹۳۰۰۰۰ - ۰۲۱</span>
               <span className='hidden lg:block bg-gray-300 w-[2px]' />
               <span>۷ روز هفته، ۲۴ ساعته پاسخگوی شما هستیم</span>
-            </div>
+            </div> */}
           </div>
           <div className='min-w-max'>
             <button
@@ -49,24 +49,22 @@ export default function Footer() {
             </button>
           </div>
         </div>
-
+{/* 
         <div className='hidden lg:block'>
           <Services />
-        </div>
+        </div> */}
 
 
         {/* info */}
         <div className='space-y-6 lg:flex lg:justify-between'>
           <div className='space-y-3 lg:max-w-2xl'>
             <h5 className='font-semibold text-black'>
-              فروشگاه اینترنتی دیجی‌کالا، بررسی، انتخاب و خرید آنلاین
+              فروشگاه اینترنتی فلامینگو  بررسی، انتخاب و خرید آنلاین
             </h5>
             <p className='text-justify text-gray-700'>
               یک خرید اینترنتی مطمئن، نیازمند فروشگاهی است که بتواند کالاهایی
               متنوع، باکیفیت و دارای قیمت مناسب را در مدت زمانی کوتاه به دست
-              مشتریان خود برساند و ضمانت بازگشت کالا هم داشته باشد؛ ویژگی‌هایی
-              که فروشگاه اینترنتی دیجی‌کالا سال‌هاست بر روی آن‌ها کار کرده و
-              توانسته از این طریق مشتریان ثابت خود را داشته باشد.
+              مشتریان خود برساند و مشتری را از یک خرید مطمعن بهر مند سازد
             </p>
           </div>
 

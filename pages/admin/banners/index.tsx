@@ -81,7 +81,7 @@ const Banners: NextPage = () => {
     }
 
     // render banners based on category
-    if (banners && banners.length > 0) {
+    if (banners) {
       return (
         <DataStateDisplay
           {...bannersQueryProps}

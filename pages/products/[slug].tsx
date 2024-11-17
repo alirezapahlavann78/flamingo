@@ -114,7 +114,7 @@ const SingleProduct: NextPage<Props> = (props) => {
 
               <Info infos={product?.info} />
 
-              <FreeShipping />
+              {/* <FreeShipping /> */}
             </div>
 
             <div className='lg:col-span-2'>
@@ -122,9 +122,9 @@ const SingleProduct: NextPage<Props> = (props) => {
             </div>
           </div>
 
-          <Services />
+          {/* <Services /> */}
 
-          {product.description.length > 0 && (
+          {product.description && product.description.length > 0 && (
             <Description description={product.description} />
           )}
 
